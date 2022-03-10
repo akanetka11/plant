@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Plant</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="header">
@@ -53,20 +54,20 @@
                 cursus. Nec tristique at in erat lectus mas sa diam. Lectus elit, nulla elementum fringilla
                 at.</p>
             <button class="btn top__btn" type="button">
-                Learn More
+                <span>Learn More</span>
             </button>
             <div class="top__footer">
                 <div class="top__item">
-                    <p class="top__count">2000+</p>
-                    <p class="top__name">Delivery</p>
+                    <span class="top__count">2000+</span>
+                    <span class="top__name">Delivery</span>
                 </div>
                 <div class="top__item">
-                    <p class="top__count">1200+</p>
-                    <p class="top__name">Customers</p>
+                    <span class="top__count">1200+</span>
+                    <span class="top__name">Customers</span>
                 </div>
                 <div class="top__item">
-                    <p class="top__count">1000+</p>
-                    <p class="top__name">Product</p>
+                    <span class="top__count">1000+</span>
+                    <span class="top__name">Product</span>
                 </div>
             </div>
         </div>
@@ -75,13 +76,19 @@
         <div class="container">
             <div class="collection__wrapper">
                 <div class="collection__info">
-                    <h2 class="title collection__title">We have lots of plants collection for you and your family</h2>
+                    <p class="title collection__title">We have lots of plants collection for you and your family</p>
                     <a href="" class="collection__link">See all collection &#8594;</a>
                 </div>
                 <div class="collection__gallery">
-                    <img src="upload/gallery1.png" alt="" class="collection__image">
-                    <img src="upload/gallery2.png" alt="" class="collection__image">
-                    <img src="upload/gallery3.png" alt="" class="collection__image">
+                    <div class="collection__item">
+                        <img src="upload/gallery1.png" alt="" class="collection__image">
+                    </div>
+                    <div class="collection__item">
+                        <img src="upload/gallery2.png" alt="" class="collection__image">
+                    </div>
+                    <div class="collection__item">
+                        <img src="upload/gallery3.png" alt="" class="collection__image">
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,13 +96,13 @@
     <section class="about">
         <div class="container">
             <div class="about__wrapper">
-                <div class="about__image">
+                <div class="about__item">
                     <div class="about__back">
-                        <img src="upload/about-us.png" alt="">
+                        <img class="about__img" src="upload/about-us.png" alt="">
                     </div>
                 </div>
                 <div class="about__info">
-                    <p class="about__header">About Us</p>
+                    <span class="about__header">About Us</span>
                     <h2 class="title about__title">
                         Continue to Develop to Became Global Company
                     </h2>
@@ -120,36 +127,52 @@
     </section>
     <section class="product">
         <div class="container">
-            <h2 class="title product__title">Our Best Product</h2>
+            <p class="title product__title">Our Best Product</p>
             <div class="product__filter">
                 <a href="" class="product__category product__category-active">New Plants</a>
                 <a href="" class="product__category">New Arrivals</a>
                 <a href="" class="product__category">Sale</a>
             </div>
             <div class="product__catalog">
-                <div class="product__item">
-                    <img src="upload/outdoor.png" alt="" class="product__image">
-                    <h2 class="product__name">Outdoor Plant</h2>
+                <div class="product__item product__item-first">
+                    <div class="product__elem">
+                        <img src="upload/outdoor.png" alt="" class="product__image">
+                    </div>
+                    <div class="product__info">
+                    <span class="product__name">Outdoor Plant</span>
                     <div class="product__rating"></div>
-                    <p class="product__price">$50.00</p>
+                    <span class="product__price">$50.00</span>
+                    </div>
                 </div>
-                <div class="product__item">
-                    <img src="upload/monstera.png" alt="" class="product__image">
-                    <h2 class="product__name">Monstera Plant</h2>
-                    <div class="product__rating"></div>
-                    <p class="product__price">$50.00</p>
+                <div class="product__item product__item-second">
+                    <div class="product__elem">
+                        <img src="upload/monstera.png" alt="" class="product__image">
+                    </div>
+                    <div class="product__info">
+                        <span class="product__name">Monstera Plant</span>
+                        <div class="product__rating"></div>
+                        <span class="product__price">$50.00</span>
+                    </div>
                 </div>
-                <div class="product__item">
-                    <img src="upload/pottel.png" alt="" class="product__image">
-                    <h2 class="product__name">Pottel Plant</h2>
-                    <div class="product__rating"></div>
-                    <p class="product__price">$50.00</p>
+                <div class="product__item product__item-third">
+                    <div class="product__elem">
+                        <img src="upload/pottel.png" alt="" class="product__image">
+                    </div>
+                    <div class="product__info">
+                        <span class="product__name">Pottel Plant</span>
+                        <div class="product__rating"></div>
+                        <span class="product__price">$50.00</span>
+                    </div>
                 </div>
-                <div class="product__item">
-                    <img src="upload/indoor.png" alt="" class="product__image">
-                    <h2 class="product__name">Indoor Plant</h2>
-                    <div class="product__rating"></div>
-                    <p class="product__price">$50.00</p>
+                <div class="product__item product__item-fourth">
+                    <div class="product__elem">
+                        <img src="upload/indoor.png" alt="" class="product__image">
+                    </div>
+                    <div class="product__info">
+                        <span class="product__name">Indoor Plant</span>
+                        <div class="product__rating"></div>
+                        <span class="product__price">$50.00</span>
+                    </div>
                 </div>
             </div>
             <button class="btn product__btn" type="button">
@@ -161,21 +184,22 @@
         <div class="container">
             <h2 class="title opinion__title">What Our Customers Says</h2>
             <p class="text opinion__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu, tempor,
-                accumsan sit
-                amet
-                nunc cursus. Nec tristique at in erat lectus mas sa diam. Lectus elit, nulla elementum fringilla
+                accumsan sit amet nunc cursus. Nec tristique at in erat lectus mas sa diam. Lectus elit, nulla elementum
+                fringilla
                 at.</p>
             <div class="opinion__review">
                 <div class="opinion__head">
-                    <img src="/upload/person.png" alt="" class="opinion__image">
-                    <div class="opinion__person person">
-                        <h3 class="person__name">Hasanul Islam
-                        </h3>
-                        <p class="person__prof">
-                            Marketing CEO
-                        </p>
+                    <div class="opinion__item">
+                        <img src="/upload/person.png" alt="" class="opinion__image">
                     </div>
-                    <p class="opinion__quotes"> &#8220;</p>
+                    <div class="opinion__person person">
+                        <span class="person__name">Hasanul Islam
+                        </span>
+                        <span class="person__prof">
+                            Marketing CEO
+                        </span>
+                    </div>
+                    <span class="opinion__quotes"> &#8220;</span>
                 </div>
                 <p class="text opinion__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu,
                     tempor,
@@ -192,15 +216,17 @@
     <section class="form">
         <div class="container">
             <div class="form__content">
-                <h2 class="title form__title">Subscribe Our Newsletter</h2>
-                <p class="text form__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu, at tempor,
-                    accumsan sit
-                    amet
-                    nunc cursus. </p>
-                <form action="" class="form__subscribe">
-                    <input type="email" placeholder="Enter mail..." class="form__input">
-                    <button type="submit" class="btn form__btn">Subscribe</button>
-                </form>
+                <div class="form__back">
+                    <h2 class="title form__title">Subscribe Our Newsletter</h2>
+                    <p class="text form__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu, at tempor,
+                        accumsan sit
+                        amet
+                        nunc cursus. </p>
+                    <form action="" class="form__subscribe">
+                        <input type="email" placeholder="Enter mail..." class="form__input">
+                        <button type="submit" class="btn form__btn">Subscribe</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -210,23 +236,23 @@
             <p class="text follow__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu, tempor, accu msan
                 sit amet nunc
                 cursus. Nec tristique at in erat lectus</p>
-            <div class="follow__gallery">
-                <div class="follow__image">
-                    <img src="upload/follow1.png" alt="">
-                </div>
-                <div class="follow__image">
-                    <img src="upload/follow2.png" alt="">
-                </div>
-                <div class="follow__image">
-                    <img src="upload/follow3.png" alt="">
-                </div>
-                <div class="follow__image">
-                    <img src="upload/follow4.png" alt="">
-                </div>
-                <div class="follow__image">
-                    <img src="upload/follow5.png" alt="">
-                </div>
-            </div>
+            <ul class="follow__gallery">
+                <li class="follow__item">
+                    <img src="upload/follow1.png" alt="" class="follow__image">
+                </li>
+                <li class="follow__item">
+                    <img src="upload/follow2.png" alt="" class="follow__image">
+                </li>
+                <li class="follow__item">
+                    <img src="upload/follow3.png" alt="" class="follow__image">
+                </li>
+                <li class="follow__item">
+                    <img src="upload/follow4.png" alt="" class="follow__image">
+                </li>
+                <li class="follow__item">
+                    <img src="upload/follow5.png" alt="" class="follow__image">
+                </li>
+            </ul>
         </div>
     </section>
 </main>
@@ -255,9 +281,9 @@
                 </div>
             </div>
             <div class="footer__navigation">
-                <h3 class="title footer__title">Navigation</h3>
+                <p class="title footer__title">Navigation</p>
                 <nav class="menu">
-                    <ul>
+                    <ul class="menu__list">
                         <li class="menu__item">
                             <a href="" class="menu__link">Coustomers Services</a>
                         </li>
@@ -272,9 +298,9 @@
                 </nav>
             </div>
             <div class="footer__navigation">
-                <h3 class="title footer__title">About Us</h3>
+                <p class="title footer__title">About Us</p>
                 <nav class="menu">
-                    <ul>
+                    <ul class="menu__list">
                         <li class="menu__item">
                             <a href="" class="menu__link">Coustomers Services</a>
                         </li>
@@ -289,9 +315,9 @@
                 </nav>
             </div>
             <div class="footer__navigation">
-                <h3 class="title footer__title">Help</h3>
+                <p class="title footer__title">Help</p>
                 <nav class="menu">
-                    <ul>
+                    <ul class="menu__list">
                         <li class="menu__item">
                             <a href="" class="menu__link">Coustomers Services</a>
                         </li>
