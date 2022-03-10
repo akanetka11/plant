@@ -180,6 +180,7 @@ a {
     flex-wrap: wrap;
     width: auto;
     justify-content: center;
+    margin-top: 2rem;
   }
 }
 
